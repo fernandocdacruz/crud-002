@@ -1,0 +1,42 @@
+.container {
+  width: 720px;
+  margin: auto;
+  background: #ccffcc;
+  border: 2px solid #006600;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+  color: #003300;
+}
+
+
+input {
+  margin: 4px;
+  padding: 4px;
+}
+
+
+button {
+  background: #009933;
+  color: white;
+  border: 1px solid black;
+  padding: 4px 10px;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+
+th,
+td {
+  border: 1px solid #006600;
+  padding: 6px;
+}

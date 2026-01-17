@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Biblioteca</h1>
+
+
+  <div class="form">
+    <input placeholder="Título" [(ngModel)]="livro.titulo">
+    <input placeholder="Autor" [(ngModel)]="livro.autor">
+    <input type="number" placeholder="Ano" [(ngModel)]="livro.anoPublicacao">
+    <input placeholder="ISBN" [(ngModel)]="livro.isbn">
+
+
+    <button (click)="salvar()">Salvar</button>
+  </div>
+
+
+  <table>
+    <tr>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Ano</th>
+      <th>Ações</th>
+    </tr>
+    <tr *ngFor="let l of livros">
+      <td>{{ l.titulo }}</td>
+      <td>{{ l.autor }}</td>
+      <td>{{ l.anoPublicacao }}</td>
+      <td>
+        <button (click)="deletar(l.id!)">Excluir</button>
+      </td>
+    </tr>
+  </table>
+</div>
